@@ -13,29 +13,34 @@ class Directory extends React.Component {
                 {
                     title: 'hats',
                     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-                    id: 1
+                    id: 1,
+                    linkUrl: 'hats'
                 },
                 {
                     title: 'jackets',
                     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-                    id: 2
+                    id: 2,
+                    linkUrl: ''
                 },
                 {
                     title: 'snickers',
                     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-                    id: 3
+                    id: 3,
+                    linkUrl: ''
                 },
                 {
                     title: 'men',
                     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
                     id: 4,
-                    size: 'large'
+                    size: 'large',
+                    linkUrl: ''
                 },
                 {
                     title: 'women',
                     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
                     id: 5,
-                    size: 'large'
+                    size: 'large',
+                    linkUrl: ''
                 }
             ]
         }
@@ -45,8 +50,8 @@ class Directory extends React.Component {
         return (
             <div className="directory-menu">
                 
-                {this.state.sections.map(({title, imageUrl, id, size}) => (
-                    <MenuItem key={id} title={title}  imageUrl={imageUrl} size={size} />
+                {this.state.sections.map(({id, ...otherSectionProps }) => (
+                    <MenuItem key={id} {...otherSectionProps}/>
                 ))}
 
             </div>
