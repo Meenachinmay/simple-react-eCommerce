@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="body-main">
       <Switch>
         <Route exact path='/' component={ Homepage }/>
         <Route path='/shop' component={ ShopPage }/>
