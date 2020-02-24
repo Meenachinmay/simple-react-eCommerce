@@ -1,6 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+
+// custom components imports
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// all the css imports
+import './index.css';
+
+ReactDOM.render(
+    
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>, 
+
+document.getElementById('root')
+);
