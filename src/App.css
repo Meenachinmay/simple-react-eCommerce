@@ -1,7 +1,9 @@
 body{
-  font-family: Open Sans Condensed;
+  
 }
 
 .body-main{
   font-family: Open Sans Condensed;
+  margin: 10px;
+  padding: 20px 60px;
 }
